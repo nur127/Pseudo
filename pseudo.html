@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h2{
+            color: rgb(63, 97, 28);
+        }
+        /* Hover means mouse over */
+        h2:hover{
+            color: brown;
+            background-color: cornflowerblue;
+        }
+
+        /* more about pseudo with double colon  */
+        h3::after{
+            content: '.pdf';
+            color: brown;
+            background-color: aquamarine;
+            font-size: 12px;
+        }
+        h3::before{
+            content: 'start';
+            color: rgb(42, 165, 83);
+            background-color: rgb(174, 127, 255);
+            font-size: 12px;
+        }
+        p::first-letter{
+            font-size: 2em;
+
+        }
+        p::first-line{
+            background-color: deeppink;
+        }
+        p::selection{
+            background-color: yellow;
+        }
+
+        input::placeholder{
+            color: blue;
+        }
+        
+
+
+        input:focus{
+            color:firebrick;
+            /* padding-left: 15px; */
+            /* background-color: aquamarine; */
+            outline: 0;
+            border: 2px solid red;
+        }
+        a:visited{
+            color:hotpink;
+        }
+        li:nth-child(2n){
+            color: fuchsia;
+        }
+        li:nth-child(2n+1){
+            color: rgb(70, 128, 12);
+        }
+        ul li:last-child{
+            background-color: coral;
+            width: 10%;
+        }
+        small{
+            color: black;
+        }
+        .swim-container{
+            position: relative;
+            border: 2px solid peru;
+            width: 100%;
+            /* margin: 0 auto; */
+        }
+
+        .box{
+            border: 2px solid red;
+            width: 400px;
+        }
+
+        /* .box-burger{
+            position: relative;
+            left: 50px;
+            top: 40px;
+            top:-100px//bottom: 100px;
+        } */
+        
+        /* .box-burger{
+            position: absolute;
+            top: 40px;
+        } */
+
+        .dummy{
+            border: 2px solid turquoise;
+            width: 400px;
+            height: 300px;
+        }
+        .another{
+            border: 2px solid blue;
+        }
+
+        /* .box-burger{
+            position: sticky;
+            top:0px
+        } */
+        /* .box-burger{
+            position: fixed;
+            top: 100px;
+            left: 60px;
+        }
+         */
+
+    </style>
+</head>
+<body>
+    <h2>My Pseudo and Hover practice</h2>
+    <input type="text" placeholder="Nur">
+    <input type="text">
+    <input type="text">
+    <a href="goggle.com" target="_blank">Google</a> &nbsp;
+    <a href="#">About</a>
+    <ul>
+        <li>One</li>
+        <li>Two</li>        
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+    </ul>
+
+    <!-- More About Pseudo -->
+    <h3>Heading 1</h3>
+    <h3>Heading 2</h3>
+    <h3>Heading 3</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum aut, cupiditate nesciunt voluptas aliquam optio minima facilis! Fugiat eum beatae dolore debitis et. Similique sint quis expedita nam maxime.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum aut, cupiditate nesciunt voluptas aliquam optio minima facilis! Fugiat eum beatae dolore debitis et. Similique sint quis expedita nam maxime.</p>
+
+    <!-- Another Video of module 7 -->
+    <h2>CSS Position</h2>
+    <ol>
+        <!-- Flow Related -->
+        <li>Static</li>
+        <li>Relative: <small>Current position a relative a koto tuku change hobe and will not leave the current page</small></li>
+        <li>Absolute: <small>Will lose it's own position and will move based one the root</small></li>
+        <!-- Scroll Related -->
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+    <div class="swim-container">
+        <div class="box-biriyani" class="box">
+            <img src="assets/biriyani.png" alt="">
+        </div>
+        <div class="box-burger" class="box">
+            <img src="assets/burger.png" alt="">
+        </div>
+        <div class="box-foods" class="box">
+            <img src="assets/foods.png" alt="">
+        </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+    <div class="another">
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+    
+
+</body>
+</html>
